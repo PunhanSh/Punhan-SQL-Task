@@ -123,3 +123,42 @@ USE Image1_1
  --TASK-13
 
  --SELECT 'This ' + 'is ' + 'SQL ' + 'EXERCISES, ' + 'Practice ' + 'and ' + 'Solution.'
+
+
+ --30.11.2021
+
+ SELECT * FROM salesman
+ SELECT * FROM customer
+
+
+ --Task-Join3
+
+ --SELECT c.cust_name as 'Customer_Name', c.city as 'Customer_City',c.grade, s.[name] as 'Salesman_Name', s.city as 'Salesman_City', s.commission FROM salesman s
+ --INNER JOIN customer c ON c.salesman_id=s.salesman_id
+
+ --Task-Join4
+
+ -- SELECT c.cust_name as 'Customer_Name', c.city as 'Customer_City',c.grade, s.[name] as 'Salesman_Name', s.city as 'Salesman_City', s.commission FROM salesman s
+ --INNER JOIN customer c ON c.salesman_id=s.salesman_id
+ --WHERE commission>0.12
+
+ --Task-Join5
+
+ -- SELECT c.cust_name as 'Customer_Name', c.city as 'Customer_City',c.grade, s.[name] as 'Salesman_Name', s.city as 'Salesman_City', s.commission FROM salesman s
+ --INNER JOIN customer c ON c.salesman_id=s.salesman_id
+ --WHERE commission>0.12 AND NOT s.city=c.city
+
+ --Task-Join6
+
+ --CREATE TABLE orders(
+ --ord_no int PRIMARY KEY identity(70001,1),
+ --purch_amt float,
+ --ord_date Date,
+ --customer_id int FOREIGN KEY REFERENCES customer(customer_id),
+ --salesman_id int FOREIGN KEY REFERENCES salesman(salesman_id)
+ --)
+
+ --INSERT INTO orders VALUES
+ --(150.5,2012/10/05,3008,5002), (270.65,2012/09/10,3009,5005), (65.26,2012/10/05,3010,5001), (110.5,2012/08/17,3011,5003), (948.5,2012/09/10,3012,5002),
+ --(2400.6,2012/07/27,3013,5001), (5760,2012/09/10,3014,5001), (1983.43,2012/10/10,3016,5006), (2480.4,2012/10/10,3008,5003), (250.45,2012/06/27,3009,5002),
+ --(75.29,2012/08/17,3010,5006), (3045.6,2012/04/25,3011,5001)
